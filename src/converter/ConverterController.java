@@ -54,7 +54,7 @@ public class ConverterController {
 		 if(!textf1.equals("")) {
 		 try {
 			 double text2=Double.parseDouble(textf1);
-			 double text3=text2*combo2.getValue().getValue()/combo1.getValue().getValue();
+			 double text3=text2*combo1.getValue().getValue()/combo2.getValue().getValue();
 			 textfield2.setText(""+text3);
 		 }catch(NumberFormatException e) {
 			 	textfield2.setText("Error!!");
@@ -64,7 +64,7 @@ public class ConverterController {
 		 else if(!textf2.equals("")) {
 			 try {
 				 double text2=Double.parseDouble(textf2);
-				 double text3=text2*combo1.getValue().getValue()/combo2.getValue().getValue();
+				 double text3=text2*combo2.getValue().getValue()/combo1.getValue().getValue();
 				 textfield1.setText(""+text3);
 			 }catch(NumberFormatException e) {
 				 	textfield1.setText("Error!!");
