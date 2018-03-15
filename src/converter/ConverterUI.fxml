@@ -9,10 +9,10 @@
 
 <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="900.0" spacing="10.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="converter.ConverterController">
    <children>
-      <TextField fx:id="textfield1" />
+      <TextField fx:id="textfield1" onAction="#handleConvert" />
       <ComboBox fx:id="combo1" prefWidth="150.0" />
       <Label text="=" />
-      <TextField fx:id="textfield2" />
+      <TextField fx:id="textfield2" onAction="#handleConvert" />
       <ComboBox fx:id="combo2" prefWidth="150.0" />
       <Button fx:id="button1" mnemonicParsing="false" onAction="#handleConvert" text="Convert" />
       <Button fx:id="button2" mnemonicParsing="false" onAction="#handleClear" text="Clear" />
